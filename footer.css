@@ -1,0 +1,328 @@
+
+:root{
+    --main-color: #252422;
+    --second-color: #403d39;
+    --third-color: #ccc5b9;
+    --fourth-color: #fffcf2;
+    --fifth-color: white;
+}
+.contact{
+    background-color: var(--fourth-color);
+    height: 350px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.contact-icons{
+    display: flex;
+    margin-top: 15px;
+    padding: 0px;
+    margin-left: 0px;
+}
+
+.contact-icons i{
+    color: var(--second-color);
+    font-size: 25px; 
+    padding: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    
+}
+#lct{
+    font-size: 22px;
+}
+.contact-icons i:hover{
+    margin-top: -10px;
+    transition: all 0.3s ease;
+}
+
+.phone-number{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin-top: 20px;
+    gap: 2em;
+}
+
+.phone-number h1{
+    color: var(--second-color);
+    font-size: 17px;
+}
+
+.phone-number h2{
+    color: var(--second-color);
+    font-size: 17px;
+}
+
+#contact-heading span{
+    color: var(--main-color);
+    font-size: 20px;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.footer-text{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -5px;
+}
+
+.footer-text a{
+    display: flex;
+    flex-direction: column;
+    color: var(--main-color);
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 15px;
+    padding: 20px;
+    margin-left: 10px;
+    line-height: 0px;
+    transition: all 0.3s ease;
+}
+
+
+
+
+
+@media screen and (max-width: 1286px){
+    .footer-text a{
+        font-size: 12px;
+    }
+
+    .contact-icons{
+        margin-top: 30px;
+    }
+    .phone-number{
+        margin-top: 10px;
+    }
+    .footer-text{
+        margin-top: -12px;
+    }
+}
+
+
+@media screen and (max-width: 1210px){
+    .footer-text a{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 1172px){
+    
+}
+
+@media screen and (max-width: 1024px){
+    
+    .contact-icons i{
+        font-size: 18px;
+        margin-left: 10px;
+    }
+    .contact-icons{
+        margin-top: 20px;
+    }
+    #lct{
+        font-size: 16px;
+    }
+    
+    .phone-number h1{
+        font-size: 14px;
+    }
+    .phone-number h2{
+        font-size: 14px;
+    }
+    .phone-number{
+        margin-top: 20px;
+        margin-left: -5px;
+    }
+    .dropbtn{
+        font-size: 14px;
+        margin-top: -40px;
+    }
+    .footer-text{
+        margin-top: -5px;
+    }
+    
+}
+
+@media screen and (max-width: 892px){
+    .contact-icons i{
+        font-size: 18px;
+    }
+    #lct{
+        font-size: 15px;
+    }
+    
+
+    .footer-text a{
+        font-size: 9px;
+    }
+}
+@media screen and (max-width: 848px){
+    .footer-text a{
+        font-size: 11px;
+        
+    }
+
+    .footer-text{
+        margin-top: -30px;
+    }
+    
+    .contact-icons i{
+        margin-left: 0px;
+    }
+
+
+    .phone-number{
+        margin-top: 0px;
+    }
+    
+    .phone-number h1{
+        font-size: 11px;
+    }
+
+    .phone-number h2{
+        font-size: 11px;
+    }
+
+
+
+}
+@media screen and (max-width: 783px){
+    .footer-text a{
+        font-size: 11px;
+        margin-left: 0px;
+
+    }
+   
+
+    
+}
+@media screen and (max-width: 769px){
+    #contact-heading span{
+        font-size: 20px;
+    }
+    
+    .dropbtn{
+        font-size: 12px;
+        
+    }
+
+    .phone-number{
+        font-size: 8px;
+    }
+
+    .phone-number h1{
+        font-size: 13px;
+    }
+
+    .phone-number h2{
+        font-size: 13px;
+    }
+
+    .contact-icons{
+        font-size: 10px;
+    }
+    .dropdown-content{
+        font-size: 10px;
+    }
+
+    .phone-number h1{
+        font-size: 10px;
+    }
+
+    .phone-number h2{
+        font-size: 10px;
+    }
+
+    .contact-icons i{
+        font-size: 14px;
+    }
+
+    #lct{
+        font-size: 12px;
+    }
+
+    .contact-icons i{
+        margin-top: 20px;
+    }
+
+    #contact-heading span{
+        font-size: 15px;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 570px){
+    .dropbtn{
+        font-size: 10px;
+        margin-top: -55px;
+    }
+    .dropdown-content{
+        min-width: 100px;
+    }
+
+    .footer-text{
+        margin-top: -50px;
+    }
+    
+}
+
+@media screen and (max-width: 526px){
+    .footer-text i{
+        margin-top: 0px;
+        line-height: 0px;
+    }
+    .contact-icons i:hover{
+        margin-top: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 484px){
+    .footer-text a{
+        font-size: 10px;
+        margin-top: 0px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 431px){
+    #contact-heading span{
+        font-size: 15px;
+        margin-top: -70px;
+    }
+
+    .footer-text a{
+        margin-top: 0px;
+        font-size: 9px;
+
+    }
+    
+    .contact-icons{
+        margin-left: 25px;
+    }
+    .contact-icons i{
+        margin-left: 0px;
+    }
+    .phone-number{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+        margin-left: 20px;
+        
+    }
+    
+}
+
