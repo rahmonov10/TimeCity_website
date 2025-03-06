@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Cbvlpatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Time City Watches</title>
+  <link rel="stylesheet" href="/xampp/htdocs/PROJECT_1/ap-1.css">
+  <link rel="stylesheet" href="/xampp/htdocs/PROJECT_1/Menu.css">
+  <link rel="stylesheet" href="/xampp/htdocs/PROJECT_1/footer.css">
+  <link rel="stylesheet"
+       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+   </head>
+   <body>
+      <header>
+         <a href="#" class="logo"><img src="/xampp/htdocs/PROJECT_1/time-city.png"></a>
+         <div class="bx bx-menu" id="menu-icon" style="color:white;"></div>
+     
+         <ul class="navbar">
+             <li><a href="#home" id="home-menu">Главная</a></li>
+             <li><a href="#shop" id="shop-menu">Часы</a></li>
+             <li><a href="#brands" id="brands-menu">Бренды</a></li>
+             <li><a href="#delivery" id="delivery-menu">Доставка</a></li>
+             <li><a href="#about" id="about-menu">О нас</a></li>
+             <li><a href="#contact" id="contact-menu">Контакт</a></li>
+         </ul>
+         <select name="" id="language-selector"  onchange="changeLanguage()">
+             <option value="ru">Russian</option>
+             <option value="uz">Uzbek</option>
+         </select>
+     
+     
+     
+      </header>
+
+
+
+<div class="container">
+   <div class="con-text">
+      <h1>Hublot</h1>
+      <h2>Royal Oak <br>Ofshore</h2>
+      <h3>42mm</h3>
+      <p>USD 149.99$</p>
+      <span>BUY NOW</span>
+   </div>
+
+   <div class="con-img">
+    <img id="catImage1" src="">
+   
+   </div>
+   <div class="watch-img">
+    <img id="catImage2" src="">
+    <img id="catImage3" src="">
+    </div>
+ 
+</div>
+
+
+<div class="service">
+   <div class="service-text">
+      <h1>EXCLUSIVE SERVICES</h1>
+   </div>
+</div>
+
+
+
+<div class="two-container">
+<div class="service-container">
+      <div class="first">
+      <i class='bx bx-package'></i>
+      <h1>DELIVERY & RETURNS</h1>
+      <p>Enjoy the savings of complimentary shipping plus the <br>
+      convenience of simple and free returns.</p>
+      </div>
+   </div>
+
+
+   <div class="service-container-sec">
+      <div class="second">
+      <i class='bx bx-lock'></i>
+      <h1>SECURE PAYMENT</h1>
+      <p>Use the latest payment technologies.
+         secure and <br>ensure your personal information is protected.</p>
+      </div>
+   </div>
+
+   </div>
+
+   <section class="contact" id="contact">
+      <div class="heading" id="contact-heading">
+              <span id="cnt">Контакты и Социальные сети</span>
+          </div>
+      
+          <div class="contact-icons">
+          <a href="https://www.instagram.com/timecityuz/"><i class='bx bxl-instagram-alt'></i></a>
+          <a href="https://t.me/timecitysupport"><i class='bx bxl-telegram'></i></a>
+          <a href="https://yandex.uz/maps/-/CHucn02L"><i class="fa-solid fa-location-dot" id="lct"></i></a>
+          </div>
+      
+          <div class="phone-number">
+              <h1>+998(95)855-45-55</h1>
+              <h2>+998(95)844-74-44</h2>
+          </div>
+  
+          <div class="footer-text">
+              <a href="#shop">КОЛЛЕКЦИИ</a>
+              <a href="https://t.me/Timecityuz" target="_blank">ТЕЛЕГРАМ КАНАЛ</a>
+              <a href="#about">ЛОКАЦИЯ</a>
+              <a href="#delivery">УСЛУГИ</a>
+              <a href="https://yandex.uz/maps/-/CHucn02L" target="_blank">МЕСТОПОЛОЖЕНИЯ НА КАРТАХ</a>
+              <a href="#brands">ВСЕ ЧАСЫ</a>
+              <a href="https://go.2gis.com/pxBtp" target="_blank">КАРТА 2GIS</a>
+              <a href="https://www.instagram.com/timecityuz/" target="_blank">НАШ ИНСТАГРАМ</a>
+          </div>
+      
+         
+      </section>
+      
+
+<script>
+
+window.onload = function() {
+            let catImageSrc = localStorage.getItem("selectedCat"); // Mushuk rasm nomini olish
+
+            // Agar mushuk tanlanmagan bo‘lsa, oldindan belgilangan 3 ta rasmni chiqaramiz
+            let defaultImage = "custom1.jpg"; // 1- va 3-rasm
+            let secondImage = "custom3.jpg"; // 2-rasm o'zgaradigan
+
+            if (catImageSrc) {
+                document.getElementById("catImage1").src = catImageSrc; // 1-rasm
+                document.getElementById("catImage2").src = catImageSrc.replace(".jpg", "-2.jpg"); // 2-rasm o'zgaradi
+                document.getElementById("catImage3").src = catImageSrc; // 3-rasm ham 1-rasm bilan bir xil
+            } else {
+                // Agar mushuk tanlanmasa, default rasmlar
+                document.getElementById("catImage1").src = defaultImage;
+                document.getElementById("catImage2").src = secondImage;
+                document.getElementById("catImage3").src = defaultImage;
+            }
+        };
+</script>
+   </body>
+</html>

@@ -1,0 +1,235 @@
+<!Doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time City Watches</title>
+
+<link rel="stylesheet" href="/xampp/htdocs/PROJECT_1/Project-1.css">
+<link rel="stylesheet" href="/xampp/htdocs/PROJECT_1/footer.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/cachep2p/0.1.6/cachep2p.min.js">
+
+
+</head>
+<body>
+
+
+<header>
+    <a href="#" class="logo"><img src="/xampp/htdocs/PROJECT_1/time-city.png"></a>
+    <div class="bx bx-menu" id="menu-icon" style="color:white;"></div>
+
+    <ul class="navbar">
+        <li><a href="#home" id="home-menu">Главная</a></li>
+        <li><a href="#shop" id="shop-menu">Часы</a></li>
+        <li><a href="#brands" id="brands-menu">Бренды</a></li>
+        <li><a href="#delivery" id="delivery-menu">Доставка</a></li>
+        <li><a href="#about" id="about-menu">О нас</a></li>
+        <li><a href="#contact" id="contact-menu">Контакт</a></li>
+    </ul>
+    <select name="" id="language-selector"  onchange="changeLanguage()">
+        <option value="ru">Russian</option>
+        <option value="uz">Uzbek</option>
+    </select>
+
+
+
+ </header>
+
+<!-- HOME -->
+<section class="home" id="home">
+<div class="home-text">
+<span id="welcome">Добро пожаловать в</span>
+<h1 class="main-word">Time City <p>Watches</p></h1>
+<h2 id="dlv">Драгоценные часы с <h2 id="dlv2">доставкой</h2></h2>
+<a href="#shop" id="home-btn" class="btn">Заказать сейчас</a>
+
+</div>
+<div class="home-img">
+    
+        <img src="img/white-cat.png" alt="">
+
+    </div>
+</section><hr>
+
+
+
+<section class="shop" id="shop">
+    <div class="shop-text">
+        <h1 id="all">Посмотреть все часы</h1>
+    </div>
+<div class="gallery">
+<div class="wrapper">
+<i id="left" class='bx bx-chevron-left'></i>
+    <div class="carousel">
+        <img src="img/white-cat.png" onclick="selectCat('hublot/hb-white.jpg')">
+        <img src="img/gold-cat.png" onclick="selectCat('hublot/hb-black-gold-sq.jpg')">
+        <img src="img/black-cat.png" onclick="selectCat('hublot/hb-black.jpg')">
+        <img src="img/golden-cat.png" onclick="selectCat('hublot/hb-gold-black.jpg')">
+        <img src="img/silver-cat.png" onclick="selectCat('hublot/hb-black-white.jpg')">
+        <img src="img/blue-cat.png" onclick="selectCat('hublot/hb-blue-silver.jpg')">
+        <img src="img/fullblack-cat.png" onclick="selectCat('hublot/hb-black-silver.jpg')">
+    </div>
+    <i id="right" class='bx bx-chevron-right'></i>
+</div>
+</div>
+
+</section><hr>
+
+<!-- Brands -->
+<section class="brands" id="brands">
+    <div class="heading">
+        <span id="brs">Все бренды</span>
+        <h1 id="now">Смотреть сейчас</h1>
+    </div>
+    <div class="brands-container">
+            <a href="rolex.php" target="_blank">ROLEX</a>
+            <a href="audemars.php" target="_blank">AUDEMARS PIGUET</a>
+            <a href="richard.php" target="_blank">RICHARD MILLE</a>
+            <a href="hublot.php" target="_blank">HUBLOT</a>
+            <a href="orient.php" target="_blank">ORIENT</a>
+    <!--<a href="maurice.php">MAURICE LACROIX</a>-->
+    <!--<a href="breguet.php">BREGUET</a>-->
+    <!--<a href="casio.php">CASIO</a>-->
+            <a href="tag.php" target="_blank">TAG HEUER</a>
+            <a href="cartier.php" target="_blank">CARTIER</a>
+    <!--<a href="omega.php">OMEGA</a>-->
+    <!--<a href="longines.php">LONGINES</a>-->
+    <!--<a href="jaeger.php">JAEGER LECOULTRE</a>-->
+    <!--<a href="breitling.php">BREITLING</a>-->
+            <a href="patek.php" target="_blank">PATEK PHILLIPE</a>
+    <!--<a href="lobinni.php">LOBINNI</a>-->
+    <!--<a href="bvlgary.php">BVLGARY</a>-->
+    <!--<a href="g-shock.php">G-SHOCK</a>-->
+            <a href="vecheron.php" target="_blank">VECHERON CONSTANTIN</a>
+            <a href="iwc.php" target="_blank">IWC</a>
+    <!--<a href="franck.php">FRANCK MULLER</a>-->
+    <!--<a href="zenith.php">ZENITH</a>-->
+    <!--<a href="ulysse.php">ULYSSE NARDIN</a>--->
+    <!--<a href="luminor.php">LUMINOR PANERAI</a>-->
+    <!--<a href="louis.php">LOUIS VUITTON</a>-->
+    <!--<a href="tudor.php">TUDOR</a>-->
+            
+            
+            
+        </div>
+    </div>
+</section><hr>
+<!-- Delivery -->
+<section class="delivery" id="delivery">
+    <div class="heading">
+        <span id="get">Получить сейчас</span>
+        <h1 id="tg">Заказать через телеграм-канал</h1>
+    </div>
+    <div class="container">
+        <div class="delivery-img">
+            <img src="/xampp/htdocs/PROJECT_1/img/delivery.jpg" alt="">
+        </div>
+        <div class="delivery-text">
+            <h2 id="dlv-txt">Сегодня заслуживают доставки</h2>
+            <p id="dv1">В TimeCity мы стремимся обеспечить быструю и эффективную
+                 доставку ваших заказов. Ниже вы найдете все, что вам 
+                 нужно знать о нашем процессе доставки. Все заказы, 
+                 размещенные до [крайнего времени, например, с 7:00 до 12:00],
+                  будут обработаны и отправлены в тот же день.</p>
+                   <p id="dv2">Заказы, размещенные после этого времени, будут обработаны 
+                    на следующий рабочий день. На данный момент мы доставляем в 
+                    следующие регионы: • (Доставляем по всему Узбекистану).
+                   Если вашего местоположения нет в списке, пожалуйста, свяжитесь
+                    с нашей службой поддержки клиентов, чтобы проверить наличие мест.</p>
+            <a href="#" class="btn" id="order">Заказать сейчас</a>
+        </div>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div class="heading" id="about-heading">
+        <span id="abt">О нашем</span>
+        <h1 class="about-text" id="magazine">Магазине</h1>
+    </div>
+    <div class="container">
+        
+        <div class="app-text" id="about-heading">
+            <h2 id="welcome2">Добро пожаловать в TimeCity, где качество сочетается с удобством!</h2>
+            <p id="abt1">
+            В TimeCity мы гордимся тем, что предлагаем широкий выбор (часов,
+             высококачественных товаров, модной одежды, электроники и т. д.),
+              призванных удовлетворить ваши потребности и превзойти ваши ожидания.</p>
+              <p id="abt2"><b>Почему выбирают нас?</b></p>
+              <p id="abt3">• Премиальное качество: мы отбираем каждый продукт вручную, 
+              чтобы гарантировать его соответствие нашим высоким стандартам качества.</p>
+              <p id="abt4">• Доступные цены: Исключительная ценность без ущерба для качества.</p>
+                <p id="abt5">• Удовлетворенность клиентов: ваше счастье является нашим приоритетом, 
+                и мы делаем все возможное, чтобы обеспечить вам положительные впечатления от покупок.</p>
+                <p id="abt6">• Быстрая доставка: мы осуществляем доставку по всему Узбекистану, гарантируя, 
+                что ваши заказы будут доставлены вам быстро и безопасно.</p>
+                <p id="abt7"><b>Наша задача</b></p>
+                <p id="abt8">Наша задача — обеспечить удобство покупок для наших клиентов, 
+                предлагая первоклассные продукты и отличный сервис.</p>
+                <p id="abt9" style="font-size:13px;"><i><q>
+                    Делайте покупки с уверенностью в TimeCity, где каждая покупка
+                     сделана качественно и с заботой.</q></i></p>
+                   
+            <a href="#" class="btn">Читать далее</a>
+        </div>
+        <div class="app-img">
+            <img src="/xampp/htdocs/PROJECT_1/img/about.webp" alt="">
+            <div style="position:relative;overflow:hidden;">
+                <a href="https://yandex.uz/maps/org/103592346829/?utm_medium=mapframe&utm_source=maps" 
+                style="color:#eee;font-size:12px;position:absolute;">Тайм Сити</a>
+                <a href="https://yandex.uz/maps/10335/tashkent/category/watch_shop/184107945/?utm_medium=mapframe&utm_source=maps"
+                 style="color:#eee;font-size:12px;position:absolute;">Магазин часов в Ташкенте</a>
+                 <a href="https://yandex.uz/maps/10335/tashkent/category/production_and_wholesale_of_watches/184107961/?utm_medium=mapframe&utm_source=maps"
+                  style="color:#eee;font-size:12px;position:absolute;">Производство и оптовая продажа часов в Ташкенте</a>
+                  <iframe src="https://yandex.uz/map-widget/v1/?ll=69.226602%2C41.267104&mode=search&oid=103592346829&ol=biz&z=16.63" 
+                    width="450" height="300" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+        </div>
+    </div>
+</section>
+
+       
+
+   
+<section class="contact" id="contact">
+    <div class="heading" id="contact-heading">
+            <span id="cnt">Контакты и Социальные сети</span>
+        </div>
+    
+        <div class="contact-icons">
+        <a href="https://www.instagram.com/timecityuz/"><i class='bx bxl-instagram-alt'></i></a>
+        <a href="https://t.me/timecitysupport"><i class='bx bxl-telegram'></i></a>
+        <a href="https://yandex.uz/maps/-/CHucn02L"><i class="fa-solid fa-location-dot" id="lct"></i></a>
+        </div>
+    
+        <div class="phone-number">
+            <h1>+998(95)855-45-55</h1>
+            <h2>+998(95)844-74-44</h2>
+        </div>
+
+        <div class="footer-text">
+            <a href="#shop">КОЛЛЕКЦИИ</a>
+            <a href="https://t.me/Timecityuz" target="_blank">ТЕЛЕГРАМ КАНАЛ</a>
+            <a href="#about">ЛОКАЦИЯ</a>
+            <a href="#delivery">УСЛУГИ</a>
+            <a href="https://yandex.uz/maps/-/CHucn02L" target="_blank">МЕСТОПОЛОЖЕНИЯ НА КАРТАХ</a>
+            <a href="#brands">ВСЕ ЧАСЫ</a>
+            <a href="https://go.2gis.com/pxBtp" target="_blank">КАРТА 2GIS</a>
+            <a href="https://www.instagram.com/timecityuz/" target="_blank">НАШ ИНСТАГРАМ</a>
+        </div>
+    
+       
+    </section>
+    
+    
+
+    
+    
+
+
+
+
+
+<script src="main.js"></script>
+</body>
+</html>
